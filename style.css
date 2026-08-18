@@ -1,0 +1,47 @@
+/* Aquí solo agregamos lo que Bootstrap no trae por defecto */
+
+/* Le damos un poco de aire (espacio) a la sección de presentación */
+.jumbotron-seccion {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  margin-bottom: 40px;
+}
+
+/* Sombra suave para que las tarjetas se vean con más relieve */
+.box-shadow {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Al pasar el mouse sobre una tarjeta, se levanta un poquito */
+.card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Quitamos el subrayado azul de los links que envuelven una tarjeta */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Círculo con las iniciales, arriba de cada tarjeta de integrante */
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 20px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Avatar más grande, para la página de perfil de cada estudiante */
+.avatar-grande {
+  width: 120px;
+  height: 120px;
+  font-size: 2rem;
+  margin-top: 40px;
+}
