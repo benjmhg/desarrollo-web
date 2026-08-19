@@ -4,83 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David Ignacio Bravo Llaguel</title>
-  <link rel="icon" href="img\xd.png" type="image/png">
+  <link rel="icon" href="img/xd.png" type="image/png">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
+  <link href="perfil.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- ===== CABECERA (igual que en index.html) ===== -->
-  <header class="navbar navbar-dark bg-dark box-shadow mg-4">
+  <header class="navbar navbar-dark box-shadow">
     <div class="container d-flex justify-content-center">
-      <span class="navbar-brand">Los Computines FC</span>
+      <a href="index.html" class="navbar-brand">Portafolio del Equipo</a>
     </div>
   </header>
 
-  <!-- ===== PORTADA DEL PERFIL ===== -->
-  <section class="bg-danger text-white text-center py-5">
-    <div class="avatar-grande bg-white text-primary mx-auto" style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden;">
-      <img src="img\Foto_David_Bravo.png" alt="Foto de David Bravo" style="width: 100%; height: 100%; object-fit: cover;">
-    </div>
-    <h1 class="mt-3">David Ignacio Bravo Llaguel</h1>
-    <span class="badge badge-dark">Desarollador</span>
-  </section>
+  <div class="pf-layout" style="--profile-accent: #dc143c; --profile-accent-text: #dc143c;">
 
-  <main class="container">
-    <div class="card mt-4 mb-5 box-shadow">
-      <div class="card-body">
+    <!-- ===== FOTO / IDENTIDAD (fija a la izquierda en escritorio) ===== -->
+    <aside class="pf-sidebar profile-hero text-white" style="background: linear-gradient(135deg, #ff0000, #dc143c);">
+      <div class="pf-avatar-ring">
+        <div class="avatar-grande bg-white text-primary mx-auto" style="width: 250px; height: 250px; border-radius: 50%; overflow: hidden;">
+          <img src="img/Foto_David_Bravo.png" alt="Foto de David Bravo" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+      <h1>David Ignacio Bravo Llaguel</h1>
+      <span class="badge badge-dark pf-badge">Desarollador</span>
+    </aside>
 
+    <!-- ===== INFO (a la derecha en escritorio) ===== -->
+    <div class="pf-content">
+
+      <div class="pf-section">
+        <span class="pf-eyebrow">01 — Perfil</span>
         <h5 class="text-primary">Sobre mí</h5>
         <p class="text-left text-muted">
           Estudiante apasionado por la tecnología y el desarrollo de software, siempre con ganas de
           aprender cosas nuevas. Dentro del equipo me encargo de desarrollar y apoyar al equipo en lo que se necesite.
           Me gusta el trabajo en equipo y resolver problemas que requieran pensamiento logico.
         </p>
-
-        <h5 class="text-primary mt-4">Habilidades</h5>
-        <p class="text-left">
-          <span class="badge badge-primary">Python</span>
-          <span class="badge badge-primary">Java</span>
-          <span class="badge badge-primary">C++</span>
-          <span class="badge badge-primary">PostgresSQL</span>
-          <span class="badge badge-primary">Trabajo en equipo</span>
-        </p>
-
-        <!-- PORTAFOLIO DE PROYECTOS -->
-        <h5 class="text-primary mt-4 mb-3">Portafolio de Proyectos</h5>
-
-        <div class="text-left mb-4">
-          <h5 class="text-primary font-weight-bold">1. Auto-Hibrido-Solar</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><strong>Problema que resuelve:</strong> Prueba de conocimiento en Arduino IDE y creacion de circutos.</li>
-            <li class="list-group-item"><strong>Tecnologías utilizadas:</strong> Arduino IDE (C++).</li>
-            <li class="list-group-item"><strong>Características principales:</strong> Creación de un auto con la capacidad 
-              de moverse de forma autonoma y esquivar obtaculos.</li>
-            <li class="list-group-item"><strong>Estado actual:</strong> Finalizado.</li>
-          </ul>
-        </div>
-
-        <div class="text-left mb-4">
-          <h5 class="text-primary font-weight-bold">2. Tortuga Robot</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><strong>Problema que resuelve:</strong> Prueba de conocimiento en Arduino IDE, creacion de circutos y conexión entre dispositivos.</li>
-            <li class="list-group-item"><strong>Tecnologías utilizadas:</strong> Arduino IDE (C++), processing, node-red y mqtt server.</li>
-            <li class="list-group-item"><strong>Características principales:</strong> Creación de un auto con la capacidad 
-              de moverse de forma autonoma, esquivar obtaculos, leer 3 sensores y manejar 2 activadores.</li>
-            <li class="list-group-item"><strong>Estado actual:</strong> Finalizado.</li>
-          </ul>
-        </div>
-
-        </ul>
-
-        <div class="text-center mt-4">
-          <a href="index.html" class="btn btn-outline-primary">&larr; Volver al equipo</a>
-        </div>
-
       </div>
+
+      <div class="pf-section">
+        <span class="pf-eyebrow">02 — Stack</span>
+        <h5 class="text-primary">Habilidades</h5>
+        <div class="pf-tags">
+          <span class="pf-tag">Python</span>
+          <span class="pf-tag">Java</span>
+          <span class="pf-tag">C++</span>
+          <span class="pf-tag">PostgresSQL</span>
+          <span class="pf-tag">Trabajo en equipo</span>
+        </div>
+      </div>
+
+      <div class="pf-section">
+        <span class="pf-eyebrow">03 — Trabajo</span>
+        <h5 class="text-primary mb-3">Portafolio de Proyectos</h5>
+
+        <div class="pf-project">
+          <div class="pf-project-head">
+            <span class="pf-project-num">01</span>
+            <h5 class="text-primary font-weight-bold mb-0">Auto-Hibrido-Solar</h5>
+            <span class="pf-status">Finalizado</span>
+          </div>
+          <p class="pf-project-row"><strong>Problema que resuelve:</strong> Prueba de conocimiento en Arduino IDE y creacion de circutos.</p>
+          <p class="pf-project-row"><strong>Características principales:</strong> Creación de un auto con la capacidad de moverse de forma autonoma y esquivar obtaculos.</p>
+          <div class="pf-tags">
+            <span class="pf-tag">Arduino IDE (C++)</span>
+          </div>
+        </div>
+
+        <div class="pf-project">
+          <div class="pf-project-head">
+            <span class="pf-project-num">02</span>
+            <h5 class="text-primary font-weight-bold mb-0">Tortuga Robot</h5>
+            <span class="pf-status">Finalizado</span>
+          </div>
+          <p class="pf-project-row"><strong>Problema que resuelve:</strong> Prueba de conocimiento en Arduino IDE, creacion de circutos y conexión entre dispositivos.</p>
+          <p class="pf-project-row"><strong>Características principales:</strong> Creación de un auto con la capacidad de moverse de forma autonoma, esquivar obtaculos, leer 3 sensores y manejar 2 activadores.</p>
+          <div class="pf-tags">
+            <span class="pf-tag">Arduino IDE (C++)</span>
+            <span class="pf-tag">processing</span>
+            <span class="pf-tag">node-red</span>
+            <span class="pf-tag">mqtt server</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="index.html" class="btn btn-outline-primary pf-btn">&larr; Volver al equipo</a>
+      </div>
+
     </div>
-  </main>
+  </div>
 
 </body>
 </html>

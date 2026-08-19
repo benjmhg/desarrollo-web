@@ -1,0 +1,29 @@
+/* Paleta en escala de grises, exclusiva del index — no afecta a las páginas de perfil */
+/* header.navbar ya es gris de forma global (style.css) */
+
+.jumbotron-seccion {
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  border-bottom: 1px solid rgba(17, 19, 22, 0.08);
+}
+
+.jumbotron-seccion h1 {
+  color: #111318;
+}
+
+.role-badge {
+  color: #374151;
+  background-color: rgba(107, 114, 128, 0.14);
+}
+
+.card-title {
+  color: #111318;
+}
+
+.card-link:hover .card,
+.card-link:focus .card {
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+.site-footer {
+  background: linear-gradient(120deg, #101216, #4b5563);
+}

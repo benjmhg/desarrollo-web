@@ -4,39 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Los computines</title>
-  <link rel="icon" href="img\xd1.png" type="image/png">
+  <link rel="icon" href="img/xd1.png" type="image/png">
   <!-- Bootstrap: nos da los estilos ya hechos (botones, tarjetas, grilla) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <link href="style.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
 </head>
 <body>
 
-  <header class="navbar navbar-dark bg-dark box-shadow">
+  <header class="navbar navbar-dark box-shadow">
     <div class="container d-flex justify-content-center">
-      <span class="navbar-brand">aca  no se que poner de titulo</span>
+      <a href="index.html" class="navbar-brand">Portafolio del Equipo</a>
     </div>
   </header>
 
   <section class="jumbotron-seccion text-center">
     <div class="container">
-      <h1>Los computines </h1>
-      <p class="lead text-muted">
-        aca podriamos ponerl una descripcion o algo xd
+      <h1>Los Computines</h1>
+      <p class="lead">
+        Somos un equipo de desarrollo web enfocado en construir soluciones prácticas y bien diseñadas,
+        aprendiendo y creciendo juntos en cada proyecto.
       </p>
     </div>
   </section>
 
   <main class="container">
-    <div class="row">
+    <div class="row justify-content-center">
 
       <div class="col-md-4">
         <a href="Benjamin_herrera.html" class="card-link">
           <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="img\xd1.png" alt="Foto integrante 1">
+            <div class="card-media" style="--img: url('img/xd1.png');">
+              <img src="img/xd1.png" alt="Foto integrante 1">
+            </div>
             <div class="card-body text-center">
               <h5 class="card-title">Benjamin Miguel Herrera Garrido</h5>
-              <p class="card-text text-muted">Encargado GIT/Desarrollador</p>
+              <span class="role-badge">Encargado GIT/Desarrollador</span>
             </div>
           </div>
         </a>
@@ -46,10 +50,12 @@
       <div class="col-md-4">
         <a href="David_Bravo.html" class="card-link">
           <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="img\Foto_David_Bravo.png" alt="Foto integrante 2">
+            <div class="card-media" style="--img: url('img/Foto_David_Bravo.png');">
+              <img src="img/Foto_David_Bravo.png" alt="Foto integrante 2">
+            </div>
             <div class="card-body text-center">
               <h5 class="card-title">David Ignacio Bravo Llaguel</h5>
-              <p class="card-text text-muted">Desarrollador</p>
+              <span class="role-badge">Desarrollador</span>
             </div>
           </div>
         </a>
@@ -57,12 +63,14 @@
 
       <!-- Integrante 3 -->
       <div class="col-md-4">
-        <a href="jazmin_Ruz.html" class="card-link">
+        <a href="Jazmin_Ruz.html" class="card-link">
           <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="img\xd1.png" alt="Foto integrante 3">
+            <div class="card-media" style="--img: url('img/xd1.png');">
+              <img src="img/xd1.png" alt="Foto integrante 3">
+            </div>
             <div class="card-body text-center">
               <h5 class="card-title">Jazmín Almendra Ruz Sepúlveda</h5>
-              <p class="card-text text-muted">Scrum Master/Desarrolladora</p>
+              <span class="role-badge">Scrum Master/Desarrolladora</span>
             </div>
           </div>
         </a>
@@ -72,10 +80,12 @@
       <div class="col-md-4">
         <a href="Jose_Cerda.html" class="card-link">
           <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="img\jose_cerda.jpeg" alt="Foto integrante 4">
+            <div class="card-media" style="--img: url('img/jose_cerda.jpeg');">
+              <img src="img/jose_cerda.jpeg" alt="Foto integrante 4">
+            </div>
             <div class="card-body text-center">
               <h5 class="card-title">José Pedro Cerda Guerrero</h5>
-              <p class="card-text text-muted">Desarrollador</p>
+              <span class="role-badge">Desarrollador</span>
             </div>
           </div>
         </a>
@@ -85,10 +95,12 @@
       <div class="col-md-4">
         <a href="Nicolas_Venegas.html" class="card-link">
           <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="img\nico.png" alt="Foto integrante 5">
+            <div class="card-media" style="--img: url('img/nico.png');">
+              <img src="img/nico.png" alt="Foto integrante 5">
+            </div>
             <div class="card-body text-center">
               <h5 class="card-title">Nicolás Ignacio Venegas Gaona</h5>
-              <p class="card-text text-muted">QA/Desarrollador</p>
+              <span class="role-badge">QA/Desarrollador</span>
             </div>
           </div>
         </a>
@@ -96,6 +108,10 @@
 
     </div>
   </main>
+
+  <footer class="site-footer">
+    <strong>Los Computines</strong> &mdash; Proyecto de equipo de desarrollo web
+  </footer>
 
 </body>
 </html>
