@@ -2,5 +2,4 @@
 FROM nginx:alpine
 
 #Copia nuestra página al directorio que nginx sirve por defecto
-COPY index.html
-#COPY index.html /usr/share/nginx/html/index.html
+COPY . /usr/share/nginx/html/
