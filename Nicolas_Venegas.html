@@ -13,30 +13,39 @@
 <body>
 
   <!-- ===== CABECERA (igual que en index.html) ===== -->
-  <header class="navbar navbar-dark box-shadow">
-    <div class="container d-flex justify-content-center">
-      <a href="index.html" class="navbar-brand">Portafolio del Equipo</a>
+  <header class="site-header sticky-top py-4">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="site-brand">
+        <img src="img/xd1.png" alt="Logo Los Computines" class="site-logo mr-2">
+        Los Computines
+      </a>
+      <nav class="site-nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="equipo.html" class="ml-4">Equipo</a>
+      </nav>
     </div>
   </header>
 
   <div class="pf-layout" style="--profile-accent: #d9b876; --profile-accent-text: #8a6a2f;">
 
     <!-- ===== FOTO / IDENTIDAD (fija a la izquierda en escritorio) ===== -->
-    <aside class="pf-sidebar profile-hero text-dark" style="background: linear-gradient(135deg, #fdf6ec, #f3dfb8);">
-      <div class="pf-avatar-ring">
-        <div class="avatar-grande bg-white text-primary mx-auto" style="width: 250px; height: 250px; border-radius: 50%; overflow: hidden;">
-          <img src="img/nico.png" alt="Foto de Nicolás Venegas" style="width: 100%; height: 100%; object-fit: cover;">
+    <aside class="pf-sidebar profile-hero text-dark" style="background: linear-gradient(160deg, #fdf6ec 0%, #f3dfb8 100%);">
+      <div class="pf-sidebar-inner">
+        <div class="pf-avatar-ring">
+          <div class="rounded-circle overflow-hidden bg-white text-primary mx-auto" style="width: 250px; height: 250px;">
+            <img src="img/nico.png" alt="Foto de Nicolás Venegas" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
         </div>
+        <h1>Nicolás Venegas</h1>
+        <span class="badge badge-pill pf-badge">Encargado QA</span>
       </div>
-      <h1>Nicolás Venegas</h1>
-      <span class="badge badge-dark pf-badge">Encargado QA</span>
     </aside>
 
     <!-- ===== INFO (a la derecha en escritorio) ===== -->
     <div class="pf-content">
 
       <div class="pf-section">
-        <span class="pf-eyebrow">01 — Perfil</span>
+        <span class="badge badge-pill pf-eyebrow">01 — Perfil</span>
         <h5 class="text-primary">Sobre mí</h5>
         <p class="text-left text-muted">
           Soy estudiante de Ingeniería Civil Informática, responsable y con excelente 
@@ -48,32 +57,32 @@
       </div>
 
       <div class="pf-section">
-        <span class="pf-eyebrow">02 — Stack</span>
+        <span class="badge badge-pill pf-eyebrow">02 — Stack</span>
         <h5 class="text-primary">Habilidades</h5>
         <div class="pf-tags">
-          <span class="pf-tag">PostreSQL</span>
-          <span class="pf-tag">Python</span>
-          <span class="pf-tag">Java</span>
-          <span class="pf-tag">C++</span>
-          <span class="pf-tag">SCRUM</span>
-          <span class="pf-tag">Trabajo en equipo</span>
+          <span class="badge badge-pill pf-tag">PostreSQL</span>
+          <span class="badge badge-pill pf-tag">Python</span>
+          <span class="badge badge-pill pf-tag">Java</span>
+          <span class="badge badge-pill pf-tag">C++</span>
+          <span class="badge badge-pill pf-tag">SCRUM</span>
+          <span class="badge badge-pill pf-tag">Trabajo en equipo</span>
         </div>
       </div>
 
       <div class="pf-section">
-        <span class="pf-eyebrow">03 — Trabajo</span>
+        <span class="badge badge-pill pf-eyebrow">03 — Trabajo</span>
         <h5 class="text-primary mb-3">Portafolio de Proyectos</h5>
 
         <div class="pf-project">
           <div class="pf-project-head">
             <span class="pf-project-num">01</span>
             <h5 class="text-primary font-weight-bold mb-0">Auto-Híbrido-Solar</h5>
-            <span class="pf-status">Finalizado</span>
+            <span class="badge badge-pill pf-status">Finalizado</span>
           </div>
           <p class="pf-project-row"><strong>Problema que resuelve:</strong> Prueba de conocimiento en Arduino IDE y creación de circuitos.</p>
           <p class="pf-project-row"><strong>Características principales:</strong> Vehículo motorizado capaz de esquivar obstáculos con sensores.</p>
           <div class="pf-tags">
-            <span class="pf-tag">Arduino IDE (C++)</span>
+            <span class="badge badge-pill pf-tag">Arduino IDE (C++)</span>
           </div>
         </div>
 
@@ -81,21 +90,25 @@
           <div class="pf-project-head">
             <span class="pf-project-num">02</span>
             <h5 class="text-primary font-weight-bold mb-0">Tortuga Robot</h5>
-            <span class="pf-status">Finalizado</span>
+            <span class="badge badge-pill pf-status">Finalizado</span>
           </div>
           <p class="pf-project-row"><strong>Problema que resuelve:</strong> Prueba de conocimiento en Arduino IDE, creación de circuitos y conexión entre dispositivos de forma remota y solución de problemas reales.</p>
           <p class="pf-project-row"><strong>Características principales:</strong> Vehículo motorizado capaz de moverse de forma autónoma para poder detectar posibles anomalías dentro de una mina de carbón.</p>
           <div class="pf-tags">
-            <span class="pf-tag">Arduino IDE (C++)</span>
-            <span class="pf-tag">Processing</span>
-            <span class="pf-tag">Node-red</span>
-            <span class="pf-tag">MQTT server</span>
+            <span class="badge badge-pill pf-tag">Arduino IDE (C++)</span>
+            <span class="badge badge-pill pf-tag">Processing</span>
+            <span class="badge badge-pill pf-tag">Node-red</span>
+            <span class="badge badge-pill pf-tag">MQTT server</span>
           </div>
         </div>
       </div>
 
       <div class="text-center mt-4">
-        <a href="index.html" class="btn btn-outline-primary pf-btn">&larr; Volver al equipo</a>
+        <a href="equipo.html" class="btn btn-outline-primary pf-btn">&larr; Volver al equipo</a>
+      </div>
+
+      <div class="pf-footer">
+        <strong>Los Computines</strong> &mdash; Proyecto de equipo de desarrollo web
       </div>
 
     </div>

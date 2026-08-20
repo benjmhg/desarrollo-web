@@ -8,178 +8,123 @@
   <!-- Bootstrap: nos da los estilos ya hechos (botones, tarjetas, grilla) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <link href="style/perfil.css" rel="stylesheet">
   <link href="style/style.css" rel="stylesheet">
-
+  <link href="style/home.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- HEADER -->
-  <header class="navbar navbar-dark box-shadow">
-    <div class="container d-flex justify-content-center">
-      <a href="index.html" class="navbar-brand">Portafolio del Equipo</a>
+  <header class="site-header sticky-top py-4">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="site-brand">
+        <img src="img/xd1.png" alt="Logo Los Computines" class="site-logo mr-2">
+        Los Computines
+      </a>
+      <nav class="site-nav-links">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="equipo.html" class="ml-4">Equipo</a>
+      </nav>
     </div>
   </header>
 
-  <!-- MISIoN DEL EQUIPO -->
-  <section class="jumbotron-seccion text-center py-5">
+  <!-- HERO -->
+  <section class="isa-section isa-section--dark isa-diagonal">
     <div class="container">
-      <h1 class="display-4 font-weight-bold">Los Computines</h1>
-      <p class="lead mt-3">
+      <span class="badge badge-pill isa-eyebrow">Equipo de desarrollo web</span>
+      <h1 class="isa-h1 mb-4">Aprendemos<br>construyendo<br>en equipo.</h1>
+      <a href="equipo.html" class="isa-link mb-4">Conoce al equipo →</a>
+      <p class="isa-lead mt-4">
         Somos un equipo de desarrollo web enfocado en construir soluciones prácticas y bien diseñadas,
         aprendiendo y creciendo juntos en cada proyecto.
       </p>
     </div>
   </section>
 
-  <!-- HISTORIA, LOGO Y FOTO GRUPAL -->
-  <section class="container my-5">
-    <div class="row align-items-center">
-      <!-- Columna Izquierda: Logo e Historia -->
-      <div class="col-md-6 text-center text-md-left mb-4 mb-md-0">
-        <!-- Reemplaza el src con tu imagen real del logo -->
-        <img src="img/xd1.png" alt="Logo Los Computines" class="img-fluid mb-3" style="max-width: 150px;">
-        <h3 class="font-weight-bold">Nuestra Historia</h3>
-        <p>Los Computines nacimos en este laboratorio con una convicción: nadie aprende solo. Lo que comenzó como una simple asignación se convirtió en un espacio de programación colaborativa en equipo para lograr el objetivo.</p>
-      </div>
-      <!-- Columna Derecha: Foto Grupal -->
-      <div class="col-md-6 text-center">
-        <!-- fotodelgrupo -->
-        <img src="img/foto_grupal.jpg" alt="Foto de equipo completo" class="img-fluid rounded shadow-sm border">
-        <p class="text-muted mt-2"><small>Equipo</small></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECCION: FORTALEZAS -->
-  <section class="container my-5 bg-light p-4 rounded shadow-sm">
-    <h3 class="text-center font-weight-bold mb-4">Nuestras Fortalezas</h3>
-    <div class="row">
-      <!-- Fortalezas tecnicas -->
-      <div class="col-md-6">
-        <h5 class="text-primary">Técnicas</h5>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item bg-transparent">Maquetación ágil y responsiva con Bootstrap.</li>
-          <li class="list-group-item bg-transparent">Estructuración semántica utilizando HTML5.</li>
-          <li class="list-group-item bg-transparent">Despliegue de servidores locales con Docker y Nginx.</li>
-        </ul>
-      </div>
-      <!-- fortalezas colaborativas -->
-      <div class="col-md-6 mt-4 mt-md-0">
-        <h5 class="text-primary">Colaborativas</h5>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item bg-transparent">Mentoría entre pares (Peer-learning).</li>
-          <li class="list-group-item bg-transparent">Comunicación efectiva y gestión ágil de tareas.</li>
-        </ul>
+  <!-- FORTALEZAS -->
+  <section class="isa-section isa-section--cream">
+    <div class="container">
+      <span class="badge badge-pill isa-eyebrow">Cómo trabajamos</span>
+      <h2 class="isa-h2">Nuestras Fortalezas</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="isa-tile isa-tile--oncream">
+            <div class="isa-tile-title">Técnicas</div>
+            <ul class="isa-tile-list">
+              <li>Maquetación ágil y responsiva con Bootstrap.</li>
+              <li>Estructuración semántica utilizando HTML5.</li>
+              <li>Despliegue de servidores locales con Docker y Nginx.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="isa-tile isa-tile--oncream">
+            <div class="isa-tile-title">Colaborativas</div>
+            <ul class="isa-tile-list">
+              <li>Mentoría entre pares (Peer-learning).</li>
+              <li>Comunicación efectiva y gestión ágil de tareas.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- TECNOLOGÍAS Y ENLACES DESTACADOS -->
-  <section class="container my-5 text-center">
-    <!-- Resumen visual de tecnologías -->
-    <h4 class="font-weight-bold mb-3">Tecnologías Utilizadas</h4>
-    <div class="mb-5">
-      <span class="badge badge-dark p-2 mr-2" style="font-size: 1rem;">HTML5</span>
-      <span class="badge badge-info p-2 mr-2" style="font-size: 1rem;">CSS3</span>
-      <span class="badge badge-primary p-2 mr-2" style="font-size: 1rem;">Bootstrap</span>
-      <span class="badge badge-secondary p-2 mr-2" style="font-size: 1rem;">Docker</span>
-      <span class="badge badge-success p-2" style="font-size: 1rem;">Nginx</span>
-    </div>
+  <section class="isa-section isa-section--dark">
+    <div class="container">
+      <span class="badge badge-pill isa-eyebrow">Stack</span>
+      <h2 class="isa-h2">Tecnologías Utilizadas</h2>
+      <div class="mb-5">
+        <span class="badge badge-pill isa-tech-pill">HTML5</span>
+        <span class="badge badge-pill isa-tech-pill">CSS3</span>
+        <span class="badge badge-pill isa-tech-pill">Bootstrap</span>
+        <span class="badge badge-pill isa-tech-pill">Docker</span>
+        <span class="badge badge-pill isa-tech-pill">Nginx</span>
+      </div>
 
-    <!-- Enlaces destacados -->
-    <h4 class="font-weight-bold mb-3">Explora nuestro proyecto</h4>
-    <div>
-      <a href="contenidos.html" class="btn btn-outline-primary btn-lg mr-2 mb-2">Investigación Frontend</a>
-      <a href="comandos-docker.html" class="btn btn-outline-dark btn-lg mb-2">Documentación Docker</a>
+      <span class="badge badge-pill isa-eyebrow">Explora nuestro proyecto</span>
+      <div class="d-flex flex-wrap" style="gap: 1rem;">
+        <a href="contenidos.html" class="isa-cta-box">
+          <span>
+            <span class="isa-cta-label">Investigación Frontend</span>
+            <span class="isa-cta-sub">Documentación del proyecto</span>
+          </span>
+          <span class="isa-cta-arrow">→</span>
+        </a>
+        <a href="comandos-docker.html" class="isa-cta-box">
+          <span>
+            <span class="isa-cta-label">Documentación Docker</span>
+            <span class="isa-cta-sub">Despliegue y comandos</span>
+          </span>
+          <span class="isa-cta-arrow">→</span>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!--TARJETAS DE INTEGRANTES -->
-  <main class="container mt-5">
-    <h2 class="text-center font-weight-bold mb-5">Conoce a Nuestro Equipo</h2>
-    <div class="row justify-content-center">
-
-      <div class="col-md-4">
-        <a href="Benjamin_herrera.html" class="card-link">
-          <div class="card mb-4 box-shadow">
-            <div class="card-media" style="--img: url('img/xd1.png');">
-              <img src="img/xd1.png" alt="Foto integrante 1">
-            </div>
-            <div class="card-body text-center">
-              <h5 class="card-title">Benjamin Miguel Herrera Garrido</h5>
-              <span class="role-badge">Encargado GIT/Desarrollador</span>
-            </div>
-          </div>
-        </a>
+  <!-- FOOTER -->
+  <footer class="site-footer text-left">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <strong>Los Computines</strong>
+          <p class="mt-2 mb-0" style="opacity: .7;">Proyecto de equipo de desarrollo web.</p>
+        </div>
+        <div class="col-6 col-md-4 isa-footer-cols">
+          <div class="isa-footer-heading">Páginas</div>
+          <a href="index.html">Inicio</a>
+          <a href="equipo.html">Equipo</a>
+        </div>
+        <div class="col-6 col-md-4 isa-footer-cols">
+          <div class="isa-footer-heading">Equipo</div>
+          <a href="Benjamin_herrera.html">Benjamin Herrera</a>
+          <a href="David_Bravo.html">David Bravo</a>
+          <a href="Jazmin_Ruz.html">Jazmín Ruz</a>
+          <a href="Jose_Cerda.html">José Cerda</a>
+          <a href="Nicolas_Venegas.html">Nicolás Venegas</a>
+        </div>
       </div>
-
-      <!-- Integrante 2 -->
-      <div class="col-md-4">
-        <a href="David_Bravo.html" class="card-link">
-          <div class="card mb-4 box-shadow">
-            <div class="card-media" style="--img: url('img/Foto_David_Bravo.png');">
-              <img src="img/Foto_David_Bravo.png" alt="Foto integrante 2">
-            </div>
-            <div class="card-body text-center">
-              <h5 class="card-title">David Ignacio Bravo Llaguel</h5>
-              <span class="role-badge">Desarrollador</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Integrante 3 -->
-      <div class="col-md-4">
-        <a href="Jazmin_Ruz.html" class="card-link">
-          <div class="card mb-4 box-shadow">
-            <div class="card-media" style="--img: url('img/jazmin_ruz.jpg');">
-              <img src="img/jazmin_ruz.jpg" alt="Foto integrante 3">
-            </div>
-            <div class="card-body text-center">
-              <h5 class="card-title">Jazmín Almendra Ruz Sepúlveda</h5>
-              <span class="role-badge">Scrum Master/Desarrolladora</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Integrante 4 -->
-      <div class="col-md-4">
-        <a href="Jose_Cerda.html" class="card-link">
-          <div class="card mb-4 box-shadow">
-            <div class="card-media" style="--img: url('img/jose_cerda.jpeg');">
-              <img src="img/jose_cerda.jpeg" alt="Foto integrante 4">
-            </div>
-            <div class="card-body text-center">
-              <h5 class="card-title">José Pedro Cerda Guerrero</h5>
-              <span class="role-badge">Desarrollador</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Integrante 5 -->
-      <div class="col-md-4">
-        <a href="Nicolas_Venegas.html" class="card-link">
-          <div class="card mb-4 box-shadow">
-            <div class="card-media" style="--img: url('img/nico.png');">
-              <img src="img/nico.png" alt="Foto integrante 5">
-            </div>
-            <div class="card-body text-center">
-              <h5 class="card-title">Nicolás Ignacio Venegas Gaona</h5>
-              <span class="role-badge">Encargado QA/Desarrollador</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
     </div>
-  </main>
-
-  <!-- FOOTER O -->
-  <footer class="site-footer text-center mt-5 p-3 bg-light">
-    <strong>Los Computines</strong> &mdash; Proyecto de equipo de desarrollo web
   </footer>
 
 </body>

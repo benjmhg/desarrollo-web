@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>José Pedro Cerda Guerrero</title>
-  <!-- Corregida la barra del ícono -->
   <link rel="icon" href="img/jose_cerda.jpeg" type="image/jpeg">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,55 +13,75 @@
 <body>
 
   <!-- ===== CABECERA ===== -->
-  <header class="navbar navbar-dark box-shadow">
-    <div class="container d-flex justify-content-center">
-      <a href="index.html" class="navbar-brand">Portafolio del Equipo</a>
+  <header class="site-header sticky-top py-4">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="site-brand">
+        <img src="img/xd1.png" alt="Logo Los Computines" class="site-logo mr-2">
+        Los Computines
+      </a>
+      <nav class="site-nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="equipo.html" class="ml-4">Equipo</a>
+      </nav>
     </div>
   </header>
 
-  <!-- ===== PORTADA DEL PERFIL ===== -->
-  <section class="bg-primary text-white text-center py-5 profile-hero">
-    <!-- Corregida la barra de la foto y asumí que tu foto es Foto_Jose.jpeg.
-         También agregué un estilo rápido para que sea circular y no se deforme -->
-    <div class="avatar-grande bg-white text-primary mx-auto" style="width: 250px; height: 250px; border-radius: 50%; overflow: hidden;">
-      <img src="img/jose_cerda.jpeg" alt="Foto de Jose Cerda" style="width: 100%; height: 100%; object-fit: cover;">
-    </div>
-    
-    <h1 class="mt-3">José Pedro Cerda Guerrero</h1>
-    <span class="badge badge-light">Desarrollador</span>
-  </section>
+  <div class="pf-layout" style="--profile-accent: #c9a55c; --profile-accent-text: #8a6423;">
 
-  <main class="container" style="max-width: 700px;">
-    <div class="card mt-4 mb-5 box-shadow profile-card" style="--accent: var(--color-primary);">
-      <div class="card-body">
+    <!-- ===== FOTO / IDENTIDAD (fija a la izquierda en escritorio) ===== -->
+    <aside class="pf-sidebar profile-hero text-dark" style="background: linear-gradient(160deg, #f8f4ec 0%, #e8d5ac 100%);">
+      <div class="pf-sidebar-inner">
+        <div class="pf-avatar-ring">
+          <div class="rounded-circle overflow-hidden bg-white text-primary mx-auto" style="width: 250px; height: 250px;">
+            <img src="img/jose_cerda.jpeg" alt="Foto de Jose Cerda" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+        <h1>José Pedro Cerda Guerrero</h1>
+        <span class="badge badge-pill pf-badge">Desarrollador</span>
+      </div>
+    </aside>
 
+    <!-- ===== INFO (a la derecha en escritorio) ===== -->
+    <div class="pf-content">
+
+      <div class="pf-section">
+        <span class="badge badge-pill pf-eyebrow">01 — Perfil</span>
         <h5 class="text-primary">Sobre mí</h5>
         <p class="text-left text-muted">
           Estudiante de Ingeniería Civil en Informática enfocado en el aprendizaje continuo y la resolución de problemas. Mantengo un equilibrio entre mis estudios y mi trabajo de fin de semana mediante rutinas diarias de ejercicio y meditación mindfulness, lo que me permite mantener la calma, el enfoque y la constancia en el trabajo en equipo.
         </p>
-
-        <h5 class="text-primary mt-4">Habilidades</h5>
-        <p class="text-left">
-          <span class="badge badge-primary">Git &amp; GitHub</span>
-          <span class="badge badge-primary">Python</span>
-          <span class="badge badge-primary">Trabajo en equipo</span>
-        </p>
-
-        <h5 class="text-primary mt-4">Proyectos</h5>
-        <ul class="list-group text-left">
-          <!-- Acuérdate de cambiar estos textos por proyectos reales cuando los tengas -->
-          <li class="list-group-item">Vehículo autónomo</li>
-          <li class="list-group-item">Página web de gestión de inventario.</li>
-          <li class="list-group-item">Casa con aplicaciones de domótica</li>
-        </ul>
-
-        <div class="text-center mt-4">
-          <a href="index.html" class="btn btn-outline-primary">&larr; Volver al equipo</a>
-        </div>
-
       </div>
+
+      <div class="pf-section">
+        <span class="badge badge-pill pf-eyebrow">02 — Stack</span>
+        <h5 class="text-primary">Habilidades</h5>
+        <div class="pf-tags">
+          <span class="badge badge-pill pf-tag">Git &amp; GitHub</span>
+          <span class="badge badge-pill pf-tag">Python</span>
+          <span class="badge badge-pill pf-tag">Trabajo en equipo</span>
+        </div>
+      </div>
+
+      <div class="pf-section">
+        <span class="badge badge-pill pf-eyebrow">03 — Trabajo</span>
+        <h5 class="text-primary mb-3">Proyectos</h5>
+        <div class="pf-tags">
+          <span class="badge badge-pill pf-tag">Vehículo autónomo</span>
+          <span class="badge badge-pill pf-tag">Página web de gestión de inventario</span>
+          <span class="badge badge-pill pf-tag">Casa con aplicaciones de domótica</span>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="equipo.html" class="btn btn-outline-primary pf-btn">&larr; Volver al equipo</a>
+      </div>
+
+      <div class="pf-footer">
+        <strong>Los Computines</strong> &mdash; Proyecto de equipo de desarrollo web
+      </div>
+
     </div>
-  </main>
+  </div>
 
 </body>
 </html>
