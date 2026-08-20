@@ -13,23 +13,90 @@
 </head>
 <body>
 
+  <!-- HEADER -->
   <header class="navbar navbar-dark box-shadow">
     <div class="container d-flex justify-content-center">
       <a href="index.html" class="navbar-brand">Portafolio del Equipo</a>
     </div>
   </header>
 
-  <section class="jumbotron-seccion text-center">
+  <!-- MISIoN DEL EQUIPO -->
+  <section class="jumbotron-seccion text-center py-5">
     <div class="container">
-      <h1>Los Computines</h1>
-      <p class="lead">
+      <h1 class="display-4 font-weight-bold">Los Computines</h1>
+      <p class="lead mt-3">
         Somos un equipo de desarrollo web enfocado en construir soluciones prácticas y bien diseñadas,
         aprendiendo y creciendo juntos en cada proyecto.
       </p>
     </div>
   </section>
 
-  <main class="container">
+  <!-- HISTORIA, LOGO Y FOTO GRUPAL -->
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <!-- Columna Izquierda: Logo e Historia -->
+      <div class="col-md-6 text-center text-md-left mb-4 mb-md-0">
+        <!-- Reemplaza el src con tu imagen real del logo -->
+        <img src="img/xd1.png" alt="Logo Los Computines" class="img-fluid mb-3" style="max-width: 150px;">
+        <h3 class="font-weight-bold">Nuestra Historia</h3>
+        <p>Los Computines nacimos en este laboratorio con una convicción: nadie aprende solo. Lo que comenzó como una simple asignación se convirtió en un espacio de programación colaborativa en equipo para lograr el objetivo.</p>
+      </div>
+      <!-- Columna Derecha: Foto Grupal -->
+      <div class="col-md-6 text-center">
+        <!-- fotodelgrupo -->
+        <img src="img/foto_grupal.jpg" alt="Foto de equipo completo" class="img-fluid rounded shadow-sm border">
+        <p class="text-muted mt-2"><small>Equipo</small></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION: FORTALEZAS -->
+  <section class="container my-5 bg-light p-4 rounded shadow-sm">
+    <h3 class="text-center font-weight-bold mb-4">Nuestras Fortalezas</h3>
+    <div class="row">
+      <!-- Fortalezas tecnicas -->
+      <div class="col-md-6">
+        <h5 class="text-primary">Técnicas</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-transparent">Maquetación ágil y responsiva con Bootstrap.</li>
+          <li class="list-group-item bg-transparent">Estructuración semántica utilizando HTML5.</li>
+          <li class="list-group-item bg-transparent">Despliegue de servidores locales con Docker y Nginx.</li>
+        </ul>
+      </div>
+      <!-- fortalezas colaborativas -->
+      <div class="col-md-6 mt-4 mt-md-0">
+        <h5 class="text-primary">Colaborativas</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-transparent">Mentoría entre pares (Peer-learning).</li>
+          <li class="list-group-item bg-transparent">Comunicación efectiva y gestión ágil de tareas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECNOLOGÍAS Y ENLACES DESTACADOS -->
+  <section class="container my-5 text-center">
+    <!-- Resumen visual de tecnologías -->
+    <h4 class="font-weight-bold mb-3">Tecnologías Utilizadas</h4>
+    <div class="mb-5">
+      <span class="badge badge-dark p-2 mr-2" style="font-size: 1rem;">HTML5</span>
+      <span class="badge badge-info p-2 mr-2" style="font-size: 1rem;">CSS3</span>
+      <span class="badge badge-primary p-2 mr-2" style="font-size: 1rem;">Bootstrap</span>
+      <span class="badge badge-secondary p-2 mr-2" style="font-size: 1rem;">Docker</span>
+      <span class="badge badge-success p-2" style="font-size: 1rem;">Nginx</span>
+    </div>
+
+    <!-- Enlaces destacados -->
+    <h4 class="font-weight-bold mb-3">Explora nuestro proyecto</h4>
+    <div>
+      <a href="contenidos.html" class="btn btn-outline-primary btn-lg mr-2 mb-2">Investigación Frontend</a>
+      <a href="comandos-docker.html" class="btn btn-outline-dark btn-lg mb-2">Documentación Docker</a>
+    </div>
+  </section>
+
+  <!--TARJETAS DE INTEGRANTES -->
+  <main class="container mt-5">
+    <h2 class="text-center font-weight-bold mb-5">Conoce a Nuestro Equipo</h2>
     <div class="row justify-content-center">
 
       <div class="col-md-4">
@@ -109,7 +176,8 @@
     </div>
   </main>
 
-  <footer class="site-footer">
+  <!-- FOOTER O -->
+  <footer class="site-footer text-center mt-5 p-3 bg-light">
     <strong>Los Computines</strong> &mdash; Proyecto de equipo de desarrollo web
   </footer>
 
