@@ -26,9 +26,10 @@
     </div>
   </header>
 
+  <!-- Se mantienen tus colores personalizados para tu perfil -->
   <div class="pf-layout" style="--profile-accent: #c9a55c; --profile-accent-text: #8a6423;">
 
-    <!-- ===== FOTO / IDENTIDAD (fija a la izquierda en escritorio) ===== -->
+    <!-- ===== FOTO / IDENTIDAD ===== -->
     <aside class="pf-sidebar profile-hero text-dark" style="background: linear-gradient(160deg, #f8f4ec 0%, #e8d5ac 100%);">
       <div class="pf-sidebar-inner">
         <div class="pf-avatar-ring">
@@ -41,7 +42,7 @@
       </div>
     </aside>
 
-    <!-- ===== INFO (a la derecha en escritorio) ===== -->
+    <!-- ===== INFO ===== -->
     <div class="pf-content">
 
       <div class="pf-section">
@@ -55,21 +56,76 @@
       <div class="pf-section">
         <span class="badge badge-pill pf-eyebrow">02 — Stack</span>
         <h5 class="text-primary">Habilidades</h5>
-        <div class="pf-tags">
-          <span class="badge badge-pill pf-tag">Git &amp; GitHub</span>
-          <span class="badge badge-pill pf-tag">Python</span>
-          <span class="badge badge-pill pf-tag">Trabajo en equipo</span>
+        
+        <!-- Estructura de barras de progreso del primer código -->
+        <div class="pf-skills">
+          <div class="pf-skill" style="--i: 1;">
+            <div class="pf-skill-head"><span>Python</span><span class="pf-skill-value">85%</span></div>
+            <div class="pf-skill-track"><div class="pf-skill-fill" style="--value: 85%;"></div></div>
+          </div>
+          <div class="pf-skill" style="--i: 2;">
+            <div class="pf-skill-head"><span>Git &amp; GitHub</span><span class="pf-skill-value">75%</span></div>
+            <div class="pf-skill-track"><div class="pf-skill-fill" style="--value: 75%;"></div></div>
+          </div>
+          <div class="pf-skill" style="--i: 3;">
+            <div class="pf-skill-head"><span>Trabajo en equipo</span><span class="pf-skill-value">95%</span></div>
+            <div class="pf-skill-track"><div class="pf-skill-fill" style="--value: 95%;"></div></div>
+          </div>
         </div>
       </div>
 
       <div class="pf-section">
         <span class="badge badge-pill pf-eyebrow">03 — Trabajo</span>
-        <h5 class="text-primary mb-3">Proyectos</h5>
-        <div class="pf-tags">
-          <span class="badge badge-pill pf-tag">Vehículo autónomo</span>
-          <span class="badge badge-pill pf-tag">Página web de gestión de inventario</span>
-          <span class="badge badge-pill pf-tag">Casa con aplicaciones de domótica</span>
+        <h5 class="text-primary mb-3">Portafolio de Proyectos</h5>
+
+        <!-- Estructura detallada de proyectos del primer código -->
+        <div class="pf-project">
+          <div class="pf-project-head">
+            <span class="pf-project-num">01</span>
+            <h5 class="text-primary font-weight-bold mb-0">Vehículo autónomo</h5>
+            <span class="badge badge-pill pf-status">Finalizado</span>
+          </div>
+          <p class="pf-project-row"><strong>Problema que resuelve:</strong> Navegación automatizada en espacios cerrados sin intervención humana. Desarrollo de vehículos con desarrollo sustentable</p>
+          <p class="pf-project-row"><strong>Características principales:</strong> Uso de sensores de proximidad, procesamiento de datos en tiempo real, uso de batería de hidrógeno verde y evasión de obstáculos.</p>
+          <p class="pf-project-row"><strong>Mi rol:</strong> Desarrollo del algoritmo de navegación.</p>
+          <div class="pf-tags">
+            <span class="badge badge-pill pf-tag">Python</span>
+            <span class="badge badge-pill pf-tag">Hardware</span>
+            <span class="badge badge-pill pf-tag">Trabajo en equipo</span>
+          </div>
         </div>
+
+        <div class="pf-project">
+          <div class="pf-project-head">
+            <span class="pf-project-num">02</span>
+            <h5 class="text-primary font-weight-bold mb-0">Página web de gestión de inventario</h5>
+            <span class="badge badge-pill pf-status">En desarrollo</span>
+          </div>
+          <p class="pf-project-row"><strong>Problema que resuelve:</strong> Desorganización y pérdida de tiempo al rastrear el stock de productos de manera manual.</p>
+          <p class="pf-project-row"><strong>Características principales:</strong> Creación, lectura, actualización y eliminación (CRUD) de productos, junto con alertas de bajo stock.</p>
+          <p class="pf-project-row"><strong>Mi rol:</strong> Desarrollador Backend / Fullstack.</p>
+          <div class="pf-tags">
+            <span class="badge badge-pill pf-tag">Desarrollo Web</span>
+            <span class="badge badge-pill pf-tag">Bases de Datos</span>
+          </div>
+        </div>
+
+        <div class="pf-project">
+          <div class="pf-project-head">
+            <span class="pf-project-num">03</span>
+            <h5 class="text-primary font-weight-bold mb-0">Casa con aplicaciones de domótica</h5>
+            <span class="badge badge-pill pf-status">Finalizado</span>
+          </div>
+          <p class="pf-project-row"><strong>Problema que resuelve:</strong> Necesidad de automatizar y controlar dispositivos eléctricos del hogar para mejorar el confort y reducir consumo.</p>
+          <p class="pf-project-row"><strong>Características principales:</strong> Control remoto de iluminación, temperatura, alarma, detección de movimiento y peligro de voltaje mediante una interfaz centralizada].</p>
+          <p class="pf-project-row"><strong>Mi rol:</strong> Configuración de hardware y programación de sensores.</p>
+          <div class="pf-tags">
+            <span class="badge badge-pill pf-tag">Domótica</span>
+            <span class="badge badge-pill pf-tag">Sensores</span>
+            <span class="badge badge-pill pf-tag">Python</span>
+          </div>
+        </div>
+
       </div>
 
       <div class="text-center mt-4">
