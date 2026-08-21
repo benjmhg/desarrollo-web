@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instalación Docker - Los Computines</title>
+  <link rel="icon" href="img/xd1.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style/style.css" rel="stylesheet">
+  <link href="style/home.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header sticky-top py-4">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="site-brand">
+        <img src="img/xd1.png" alt="Logo Los Computines" class="site-logo mr-2">
+        Los Computines
+      </a>
+      <nav class="site-nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="equipo.html" class="ml-4">Equipo</a>
+        <a href="docker-instalacion.html" class="ml-4 active">Docker y Nginx</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- TÍTULO PRINCIPAL -->
+  <section class="isa-section isa-section--dark isa-diagonal">
+    <div class="container">
+      <span class="badge badge-pill isa-eyebrow">Documentación Técnica</span>
+      <h1 class="isa-h1 mb-4">Instalación de Docker<br>y Despliegue con Nginx.</h1>
+      <p class="isa-lead mt-4">
+        Guía paso a paso sobre los requisitos, la configuración del contenedor y la publicación de nuestro sitio web local.
+      </p>
+    </div>
+  </section>
+
+  <!-- INSTALACIÓN DOCKER Y WSL -->
+  <section class="isa-section isa-section--cream">
+    <div class="container">
+      <h2 class="isa-h2">1. Instalación de Docker Desktop</h2>
+      
+      <!-- NUEVA SECCIÓN WSL -->
+      <div class="row mt-4">
+        <div class="col-md-12">
+            <h3>Requisitos Previos: Configuración de WSL 2</h3>
+            <p>Para que Docker funcione correctamente en Windows, es fundamental habilitar el Subsistema de Windows para Linux (WSL 2). A continuación, las evidencias de la preparación del entorno mediante terminal:</p>
+        </div>
+      </div>
+      
+      <div class="row mt-3 mb-5">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/wsl-install.png" class="card-img-top" alt="Instalación de WSL">
+            <div class="card-body"><p class="card-text text-center text-muted">Evidencia: Comando <code>wsl --install</code> para habilitar el subsistema.</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/wsl-update.png" class="card-img-top" alt="Actualización de WSL a versión 2">
+            <div class="card-body"><p class="card-text text-center text-muted">Evidencia: Configuración de WSL versión 2 por defecto.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCIÓN ORIGINAL DOCKER -->
+      <div class="row">
+        <div class="col-md-12">
+            <h3>¿Qué es Docker Desktop?</h3>
+            <p>Docker Desktop es una aplicación que facilita la creación, prueba y despliegue de aplicaciones empaquetadas en contenedores de forma rápida y sencilla en entornos locales.</p>
+            
+            <h3 class="mt-4">Pasos de Instalación en Windows</h3>
+            <ul>
+                <li><strong>Paso 1:</strong> Abrir un navegador y entrar a <code>https://www.docker.com/get-started/</code></li>
+                <li><strong>Paso 2:</strong> Buscar el botón "Download Docker Desktop" y descargar el archivo para el sistema operativo correspondiente.</li>
+                <li><strong>Paso 3:</strong> Ejecutar <code>Docker Desktop Installer.exe</code>. En el asistente de instalación, aceptar los términos y dejar la opción por defecto de usar WSL 2 (si aparece).</li>
+                <li><strong>Paso 4:</strong> Pulsar Next / Install hasta finalizar y reiniciar el equipo si el instalador lo solicita.</li>
+            </ul>
+        </div>
+      </div>
+
+      <h3 class="mt-5 mb-4">Evidencias de Ejecución</h3>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/Docker_running.png" class="card-img-top" alt="Docker Desktop">
+            <div class="card-body"><p class="card-text text-center text-muted">Captura 1: Docker Desktop funcionando.</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/hello-world.png" class="card-img-top" alt="Hello World">
+            <div class="card-body"><p class="card-text text-center text-muted">Captura 2: Comando hello-world.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSTRUCCIÓN NGINX -->
+  <section class="isa-section isa-section--dark">
+    <div class="container">
+      <h2 class="isa-h2">2. Despliegue con Nginx</h2>
+      <div class="row mt-4 text-white">
+        <div class="col-md-12">
+            <h3>Propósito de Nginx</h3>
+            <p>Nginx es un servidor web ligero. Dentro de Docker, sirve los archivos estáticos (HTML, CSS) de nuestro sitio a los usuarios.</p>
+
+            <h3 class="mt-4">Dockerfile e Instrucciones</h3>
+            <ul>
+                <li><code>FROM nginx</code>: Define la imagen base de Nginx.</li>
+                <li><code>COPY . /usr/share/nginx/html/</code>: Transfiere los archivos al directorio público del contenedor.</li>
+                <li><code>EXPOSE 80</code>: Expone el puerto del contenedor.</li>
+            </ul>
+
+            <h3 class="mt-4">Comandos Obligatorios</h3>
+            <ul>
+                <li><strong>Construir la imagen:</strong> <code>docker build -t mi-web-html .</code></li>
+                <li><strong>Ejecutar contenedor:</strong> <code>docker run -d -p 8080:80 --name mi-web-container mi-web-html</code></li>
+                <li><strong>Mapeo de Puertos (-p 8080:80):</strong> Conecta el puerto 8080 de tu PC con el puerto 80 del contenedor.</li>
+            </ul>
+        </div>
+      </div>
+
+      <h3 class="mt-5 mb-4 text-white">Evidencias de Despliegue</h3>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 border-0 bg-secondary">
+            <img src="img/Terminal_runnig.png" class="card-img-top" alt="Terminal">
+            <div class="card-body"><p class="card-text text-center text-white">Captura 3: Contenedor activo.</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 border-0 bg-secondary">
+            <img src="img/localhost.png" class="card-img-top" alt="Localhost">
+            <div class="card-body"><p class="card-text text-center text-white">Captura 4: Sitio en localhost:8080.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer text-left">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <strong>Los Computines</strong>
+          <p class="mt-2 mb-0" style="opacity: .7;">Proyecto 2026 - Equipo de desarrollo web.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
