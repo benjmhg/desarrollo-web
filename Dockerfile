@@ -1,8 +1,8 @@
 # Usa la imagen oficial de Nginx
-FROM nginx:alpine
+FROM nginx
 
-# Copia la configuración personalizada de Nginx
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Copia la configuración personalizada de Nginx (DESACTIVADO)
+# COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copia todos los archivos de la página
 COPY . /usr/share/nginx/html/
