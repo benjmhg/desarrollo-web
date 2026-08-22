@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Documentación HTML Semánticas</title>
+  <title>Etiquetas Semánticas</title>
   <link rel="icon" href="img/xd1.png" type="image/png">
   
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
   
+  <!-- Estilos del proyecto -->
   <link href="style/style.css" rel="stylesheet">
   <link href="style/home.css" rel="stylesheet">
 </head>
@@ -32,60 +33,176 @@
   <section class="isa-section isa-section--dark isa-diagonal">
     <div class="container">
       <span class="badge badge-pill isa-eyebrow">Investigación Frontend</span>
+      
       <h1 class="isa-h1 mb-4">Etiquetas<br>Semánticas.</h1>
+      
       <p class="isa-lead mt-4">
-        Documentación sobre las piezas fundamentales utilizadas para construir nuestro sitio web. 
-        Aquí detallamos el propósito de cada etiqueta y mostramos evidencias de su uso en el proyecto.
+        Documentación sobre las piezas fundamentales utilizadas para estructurar semánticamente nuestro sitio web, mejorando la accesibilidad y el orden del código.
       </p>
     </div>
   </section>
 
-  <!-- CONTENIDO: Tarjetas de documentación (Sección clara) -->
+  <!-- Tarjetas de documentación -->
   <section class="isa-section isa-section--cream">
     <div class="container">
       <span class="badge badge-pill isa-eyebrow">Diccionario de Etiquetas</span>
-      <h2 class="isa-h2">Propósito y Ejemplos</h2>
+      <h2 class="isa-h2">Propósito y Evidencias</h2>
+      
       <div class="row mt-5">
-        <!-- Ejemplo: <header> -->
+        <!-- <header> y <nav> -->
         <div class="col-md-6 mb-4">
-          <div class="isa-tile isa-tile--oncream">
-            <div class="isa-tile-title">&lt;header&gt;</div>
+          <div class="isa-tile isa-tile--oncream h-100 d-flex flex-column">
+            <div class="isa-tile-title">&lt;header&gt; y &lt;nav&gt;</div>
+            
+            <!-- Descripciones -->
             <ul class="isa-tile-list mb-4">
-              <li><strong>Propósito:</strong> Define la cabecera de una página o de una sección temática.</li>
-              <li><strong>Uso en el sitio:</strong> Se utilizó en el archivo <code>index.html</code> para contener el logo de Los Computines y la barra de navegación principal.</li>
+              <li><strong>Propósito:</strong> <code>&lt;header&gt;</code> define la cabecera del documento. <code>&lt;nav&gt;</code> envuelve la sección exclusiva para los enlaces de navegación principales.</li>
+              <li><strong>Uso en el sitio:</strong> Se implementaron de forma global en todas las páginas, como <code>index.html</code>, para contener el logo y el menú superior.</li>
             </ul>
-            <!-- Bloque de código oscuro para el ejemplo -->
-            <div class="p-3 bg-dark text-white rounded" style="font-size: 0.85rem; overflow-x: auto;">
-              <code>
-<span style="color: #ff7b72;">&lt;header</span> <span style="color: #79c0ff;">class=</span><span style="color: #a5d6ff;">"site-header sticky-top py-4"</span><span style="color: #ff7b72;">&gt;</span><br>
-&nbsp;&nbsp;...contenido de la cabecera...<br>
-<span style="color: #ff7b72;">&lt;/header&gt;</span>
-              </code>
+          
+            <div class="mt-auto">
+              <!-- 1. Evidencia en Código -->
+              <div class="card shadow-sm border-0 mb-3">
+                <img src="img/documentacion/header-nav-code.png" class="card-img-top border-bottom" alt="Evidencia en código">
+                <div class="card-body py-2 bg-light">
+                  <p class="card-text text-center text-muted mb-0" style="font-size: 0.8rem;">Evidencia: Fragmento de código HTML.</p>
+                </div>
+              </div>
+            
+              <!-- 2. Evidencia Visual -->
+              <div class="card shadow-sm border-0">
+                <img src="img/documentacion/header-nav-visual.png" class="card-img-top border-bottom" alt="Evidencia visual">
+                <div class="card-body py-2 bg-light">
+                  <p class="card-text text-center text-muted mb-0" style="font-size: 0.8rem;">Evidencia: Implementación en la interfaz superior.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- ========================================== -->
-        <!-- TARJETA DE ETIQUETA 2 (Ejemplo: <nav>)     -->
-        <!-- ========================================== -->
+        <!-- <main> y <section> -->
         <div class="col-md-6 mb-4">
-          <div class="isa-tile isa-tile--oncream">
-            <div class="isa-tile-title">&lt;nav&gt;</div>
+          <div class="isa-tile isa-tile--oncream h-100 d-flex flex-column">
+            <div class="isa-tile-title">&lt;main&gt; y &lt;section&gt;</div>
+            
             <ul class="isa-tile-list mb-4">
-              <li><strong>Propósito:</strong> Define una sección exclusiva para enlaces de navegación principales.</li>
-              <li><strong>Uso en el sitio:</strong> Envuelve los links de "Inicio", "Equipo" y demás páginas dentro de la cabecera.</li>
+              <li><strong>Propósito:</strong> <code>&lt;main&gt;</code> delimita el contenido central y único. <code>&lt;section&gt;</code> divide el documento en áreas temáticas.</li>
+              <li><strong>Uso en el sitio:</strong> <code>&lt;main&gt;</code> encapsula la cuadrícula de los integrantes en <code>equipo.html</code>. Las <code>&lt;section&gt;</code> dividen los bloques grandes de información.</li>
             </ul>
-            <div class="p-3 bg-dark text-white rounded" style="font-size: 0.85rem; overflow-x: auto;">
-              <code>
-<span style="color: #ff7b72;">&lt;nav</span> <span style="color: #79c0ff;">class=</span><span style="color: #a5d6ff;">"site-nav-links"</span><span style="color: #ff7b72;">&gt;</span><br>
-&nbsp;&nbsp;&lt;a href="index.html"&gt;Inicio&lt;/a&gt;<br>
-<span style="color: #ff7b72;">&lt;/nav&gt;</span>
-              </code>
+          
+            <div class="mt-auto">
+              <!-- 1. Evidencia en Código -->
+              <div class="card shadow-sm border-0 mb-3">
+                <img src="img/documentacion/main-section-code.png" class="card-img-top border-bottom" alt="Evidencia en código">
+                <div class="card-body py-2 bg-light">
+                  <p class="card-text text-center text-muted mb-0" style="font-size: 0.8rem;">Evidencia: Fragmento de código HTML.</p>
+                </div>
+              </div>
+            
+              <!-- 2. Evidencia Visual -->
+              <div class="card shadow-sm border-0">
+                <img src="img/documentacion/main-section-visual.png" class="card-img-top border-bottom" alt="Evidencia visual">
+                <div class="card-body py-2 bg-light">
+                  <p class="card-text text-center text-muted mb-0" style="font-size: 0.8rem;">Evidencia: Cuadrícula de integrantes.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Copia y pega el bloque div.col-md-6 para ir agregando <main>, <section>, <article>, etc. -->
+        <!-- <aside> -->
+
+        <div class="col-md-6 mb-4">
+          <div class="isa-tile isa-tile--oncream h-100 d-flex flex-column">
+            <div class="isa-tile-title">&lt;aside&gt;</div>
+            
+            <ul class="isa-tile-list mb-4">
+              <li><strong>Propósito:</strong> Contenedor semántico para contenido lateral que complementa la información principal (como barras laterales o perfiles).</li>
+              <li><strong>Uso en el sitio:</strong> Se utilizó en los perfiles de los integrantes para alojar la barra izquierda fija con la foto y el nombre.</li>
+            </ul>
+          
+            <div class="mt-auto">
+              <!-- 1. Evidencia en Código -->
+              <div class="card shadow-sm border-0 mb-3">
+                <img src="img/documentacion/aside-code.png" class="card-img-top border-bottom" alt="Evidencia en código">
+                <div class="card-body py-2 bg-light">
+                  <p class="card-text text-center text-muted mb-0" style="font-size: 0.8rem;">Evidencia: Fragmento de código HTML.</p>
+                </div>
+              </div>
+            
+              <!-- 2. Evidencia Visual -->
+              <div class="card shadow-sm border-0">
+                <img src="img/documentacion/aside-visual.png" class="card-img-top border-bottom" alt="Evidencia visual">
+                <div class="card-body py-2 bg-light">
+                  <p class="card-text text-center text-muted mb-0" style="font-size: 0.8rem;">Evidencia: Barra lateral en el perfil.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <article> -->
+        <div class="col-md-6 mb-4">
+          <div class="isa-tile isa-tile--oncream h-100 d-flex flex-column">
+            <div class="isa-tile-title">&lt;article&gt;</div>
+            
+            <ul class="isa-tile-list mb-4">
+              <li><strong>Propósito:</strong> Representa un bloque de contenido independiente y autónomo que tiene sentido por sí mismo, como un proyecto en un portafolio o una noticia.</li>
+              <li><strong>Uso en el sitio:</strong> Se utiliza en la sección de "Portafolio de Proyectos" de los integrantes para estructurar cada bloque de proyecto.</li>
+            </ul>
+          
+            <div class="mt-auto">
+              <!-- 1. Evidencia en Código -->
+              <div class="card shadow-sm border-0 mb-3">
+                <img src="img/documentacion/article-code.png" class="card-img-top border-bottom" alt="Evidencia en código">
+                <div class="card-body py-2 bg-light">
+                  <p class="card-text text-center text-muted mb-0" style="font-size: 0.8rem;">Evidencia: Fragmento de código HTML.</p>
+                </div>
+              </div>
+            
+              <!-- 2. Evidencia Visual -->
+              <div class="card shadow-sm border-0">
+                <img src="img/documentacion/article-visual.png" class="card-img-top border-bottom" alt="Evidencia visual">
+                <div class="card-body py-2 bg-light">
+                  <p class="card-text text-center text-muted mb-0" style="font-size: 0.8rem;">Evidencia: Tarjeta independiente de proyecto.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TARJETA: <footer> -->
+        <div class="col-md-12 mb-4">
+          <div class="isa-tile isa-tile--oncream h-100 d-flex flex-column">
+            <div class="isa-tile-title">&lt;footer&gt;</div>
+            
+            <ul class="isa-tile-list mb-4">
+              <li><strong>Propósito:</strong> Define el pie de página de un documento. Suele agrupar información de autoría, enlaces complementarios o derechos de autor.</li>
+              <li><strong>Uso en el sitio:</strong> Presente al final de todas las páginas del proyecto para mostrar los enlaces rápidos y el nombre del equipo.</li>
+            </ul>
+          
+            <div class="mt-auto">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card shadow-sm border-0 mb-3 mb-md-0">
+                    <img src="img/documentacion/footer-code.png" class="card-img-top border-bottom" alt="Evidencia en código">
+                    <div class="card-body py-2 bg-light">
+                      <p class="card-text text-center text-muted mb-0" style="font-size: 0.8rem;">Evidencia: Fragmento de código HTML.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card shadow-sm border-0">
+                    <img src="img/documentacion/footer-visual.png" class="card-img-top border-bottom" alt="Evidencia visual">
+                    <div class="card-body py-2 bg-light">
+                      <p class="card-text text-center text-muted mb-0" style="font-size: 0.8rem;">Evidencia: Implementación visual en la parte inferior.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
