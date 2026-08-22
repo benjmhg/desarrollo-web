@@ -50,7 +50,7 @@
             <div class="card-body p-4">
               <h4 class="font-weight-bold mb-3">1. Integrantes y responsabilidades asignadas</h4>
               <ul class="text-muted mb-0">
-                <li class="mb-2"><strong>Jazmín Ruz:</strong> Falta rellenar responsabilidades...</li>
+                <li class="mb-2"><strong>Jazmín Ruz:</strong> Scrum master del equipo. Encargada de gestionar el tablero de Jira y coordinar la recopilación de la investigación. Estructuró y diseñó las páginas de "Contenidos", "Reflexión" y su página individual usando HTML y Bootstrap, aportando también a estructurar la página principal para cumplir con la pauta. Además, participó en la investigación técnica inicial y en las pruebas conjuntas de despliegue para verificar el correcto funcionamiento del contenedor Docker.</li>
                 <li class="mb-2"><strong>Benjamín Herrera:</strong> ...</li>
                 <li class="mb-2"><strong>David Bravo:</strong> ...</li>
                 <li class="mb-2"><strong>José Cerda:</strong> ...</li>
@@ -61,42 +61,54 @@
 
           <div class="card border-0 shadow-sm mb-4">
             <div class="card-body p-4">
-              <h4 class="font-weight-bold mb-3">2. herramientas utilizadas para coordinar</h4>
-              <p class="text-muted mb-0">falta rellenar herramientas...</p>
+              <h4 class="font-weight-bold mb-3">2. Herramientas utilizadas para coordinar</h4>
+              <li class="mb-2"><strong>Jira:</strong> Gestión ágil del proyecto mediante Scrum, asignación de tarjetas y seguimiento del estado de las tareas individuales.</li>
+              <li class="mb-2"><strong>WhatsApp:</strong> Comunicación rápida, coordinación diaria y recordatorios de los objetivos del día.</li>
+              <li class="mb-2"><strong>Discord:</strong> Reuniones para programar en conjunto y compartir recursos gráficos.</li>
+              <li class="mb-2"><strong>GitHub y Git:</strong> Alojamiento del repositorio oficial, control de versiones colaborativo y unificación de los avances del código de todo el equipo.</li>
+              <li><strong>Visual Studio Code:</strong> Entorno de desarrollo (IDE) principal, utilizando sus herramientas integradas de terminal para compilar el servidor.</li>
             </div>
           </div>
 
           <div class="card border-0 shadow-sm mb-4">
             <div class="card-body p-4">
-              <h4 class="font-weight-bold mb-3">3. dificultades encontradas</h4>
-              <p class="text-muted mb-0">Falta rellenar dificultades...</p>
+              <h4 class="font-weight-bold mb-3">3. Dificultades encontradas</h4>
+              <li class="mb-2"><strong>Rutas y sistema de archivos en Docker:</strong> Tuvimos fallas donde algunas imágenes no se visualizaban al levantar el contenedor, principalmente por las diferencias al escribir los nombres de los archivos entre nuestros entornos locales y el sistema de Linux.</li>
+              <li class="mb-2"><strong>Definición del diseño visual:</strong> Al principio hubo incertidumbre sobre cómo estructurar la página principal. Al ser una primera versión exploratoria, nos costó aprovechar bien los espacios de la pantalla y definir una identidad clara.</li>
+              <li class="mb-2"><strong>Despliegue incial del servidor:</strong> Durante la primera reunión de coordinación, el equipo enfrentó obstáculos técnicos para lograr hostear y levantar la página correctamente en el entorno local.</li>
+              <li><strong>Nivelación técnica del equipo:</strong> Hubo una curva de aprendizaje inicial, ya que algunos integrantes no estaban familiarizados con la inserción y manejo de rutas de imágenes en HTML, lo que requirió apoyo entre pares.</li>
             </div>
           </div>
 
           <div class="card border-0 shadow-sm mb-4">
             <div class="card-body p-4">
-              <h4 class="font-weight-bold mb-3">4. soluciones aplicadas</h4>
-              <p class="text-muted mb-0">falta rellenar soluciones...</p>
+              <h4 class="font-weight-bold mb-3">4. Soluciones aplicadas</h4>
+              <li class="mb-2"><strong>Peer-learning</strong> Para el problema de las imágenes, un compañero con mayor experiencia guió al resto sobre cómo estructurar y enlazar correctamente los archivos.</li>
+              <li class="mb-2"><strong>Flujo de trabajo individual</strong> Gracias a que las tareas estaban claramente definidas en Jira desde el principio, pudimos trabajar en GitHub de forma independiente y sin interferir en el código de los demás, evitando colisiones.</li>
+              <li><strong>Debugging de sintaxis en Docker:</strong> El error de la imagen se solucionó con una revisión exhaustiva del código. Descubrimos que Docker (basado en Linux) es <em>case-sensitive</em>, por lo que una simple letra mayúscula que no correspondía en el nombre del archivo arruinaba la ruta.</li>
             </div>
           </div>
 
           <div class="card border-0 shadow-sm mb-4">
             <div class="card-body p-4">
               <h4 class="font-weight-bold mb-3">5. Aprendizajes técnicos</h4>
-              <p class="text-muted small mb-2">(Sobre HTML, CSS, Bootstrap, Docker y Nginx)</p>
-              <p class="text-muted mb-0">rellenar aprendizajes...</p>
+              <li class="mb-2"><strong>HTML:</strong> Comprendimos que es el lenguaje estándar y el esqueleto lógico de la web, utilizando etiquetas semánticas no solo para insertar texto, sino para dar jerarquía y estructura a la página.</li>
+              <li class="mb-2"><strong>CSS:</strong> Entendimos que es la herramienta que permite maquetar, posicionar elementos y separar el contenido de la presentación visual para crear diseños atractivos.</li>
+              <li class="mb-2"><strong>Bootstrap:</strong> Descubrimos que es un framework que proporciona un sistema de grillas y componentes pre-armados. Fue una gran ayuda porque nos permitió crear una interfaz responsiva de forma rápida y orientada, sin tener que programar cada estilo desde cero.</li>
+              <li class="mb-2"><strong>Docker:</strong> Aprendimos que sirve para "empaquetar" todo nuestro proyecto en un contenedor aislado, garantizando que nuestro sitio web se ejecute exactamente igual en la computadora de cualquiera.</li>
+              <li><strong>Nginx:</strong> Comprendimos su rol fundamental como servidor web (el "bibliotecario") dentro de Docker, siendo el encargado de escuchar el puerto 80, procesar las peticiones y entregar correctamente nuestros archivos estáticos (HTML/CSS) al navegador.</li>
             </div>
           </div>
 
           <div class="card border-0 shadow-sm mb-4">
             <div class="card-body p-4">
               <h4 class="font-weight-bold mb-3">6. Importancia de la colaboración</h4>
-              <p class="text-muted small mb-2">(Organización del equipo)</p>
-              <p class="text-muted mb-0">rellenar importancia...</p>
+              <li class="mb-2"><strong>Optimización del tiempo:</strong> Dividir el proyecto en roles y tareas específicas aceleró drásticamente el desarrollo y redujo la carga individual.</li>
+              <li class="mb-2"><strong>Retroalimentación y nivelación:</strong> La colaboración fomentó un ambiente donde quienes dominaban un tema lo compartían con los demás, elevando el nivel técnico de todo el equipo.</li>
+              <li class="mb-2"><strong>Resolución acelerada de bloqueos:</strong> Cuando nos topamos con errores, el hecho de enfocar varias mentes en un mismo problema permitió encontrar soluciones mucho más rápido que si estuviéramos solos.</li>
+              <li><strong>Confianza en el equipo:</strong> Al tener tareas interdependientes, aprendimos a confiar en el trabajo del otro.</li>
             </div>
           </div>
-
-        </div>
 
         <!-- COLUMNA DERECHA: Reflexiones Individuales -->
         <div class="col-lg-5 mb-4">
@@ -108,7 +120,7 @@
               
               <div class="mb-4">
                 <h6 class="font-weight-bold text-dark">Jazmín Ruz</h6>
-                <p class="text-muted font-italic mb-0">"reflexión individual..."</p>
+                <p class="text-muted font-italic mb-0">"Al asumir el rol de Scrum Master, inicialmente me sentí abrumada ante el desafío de estructurar y asignar las tareas; existía la duda de saber si lo estaba haciendo bien. A la par que comenzó el proyecto me daba temor equivocarme y dañar el proyecto. De hecho, en un momento rompí parte del código en el archivo index.html. Sin embargo, un compañero con más experiencia lo solucionó rápidamente, con disposición y sin reproches. La actitud empática del equipo, me generó confianza. Este desafío colaborativo me demostró que equivocarse es parte del proceso."</p>
               </div>
               <hr>
               
