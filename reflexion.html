@@ -144,16 +144,33 @@
           </div>
         </div>
 
-        <!-- DIFICULTADES -->
+<!-- DIFICULTADES -->
         <div class="col-lg-6 mb-4">
           <div class="card border-0 shadow-sm h-100">
             <div class="card-body p-4">
               <h4 class="font-weight-bold mb-3 border-bottom pb-2"> Dificultades encontradas</h4>
-              <ul class="text-muted mb-0 mt-3">
-                <li class="mb-2"><strong>Rutas y sistema de archivos en Docker:</strong> Tuvimos fallas donde algunas imágenes no se visualizaban al levantar el contenedor, principalmente por las diferencias al escribir los nombres de los archivos entre nuestros entornos locales y el sistema de Linux.</li>
-                <li class="mb-2"><strong>Definición del diseño visual:</strong> Al principio hubo incertidumbre sobre cómo estructurar la página principal. Al ser una primera versión exploratoria, nos costó aprovechar bien los espacios de la pantalla y definir una identidad clara.</li>
-                <li class="mb-2"><strong>Despliegue inicial del servidor:</strong> Durante la primera reunión de coordinación, el equipo enfrentó obstáculos técnicos para lograr hostear y levantar la página correctamente en el entorno local.</li>
-                <li><strong>Nivelación técnica del equipo:</strong> Hubo una curva de aprendizaje inicial, ya que algunos integrantes no estaban familiarizados con la inserción y manejo de rutas de imágenes en HTML, lo que requirió apoyo entre pares.</li>
+              <ul class="text-muted mb-0 mt-3" style="list-style-type: none; padding-left: 0;">
+                
+                <li class="mb-3 d-flex align-items-start">
+                  <img src="img/Reflexion/imagen_perdida.png" alt="Rutas Docker" style="width: 24px; height: 24px;" class="mr-2 mt-1">
+                  <div><strong>Rutas y sistema de archivos en Docker:</strong> Tuvimos fallas donde algunas imágenes no se visualizaban al levantar el contenedor, principalmente por las diferencias al escribir los nombres de los archivos entre nuestros entornos locales y el sistema de Linux.</div>
+                </li>
+                
+                <li class="mb-3 d-flex align-items-start">
+                  <img src="img/Reflexion/incertidumbre.png" alt="Diseño Visual" style="width: 24px; height: 24px;" class="mr-2 mt-1">
+                  <div><strong>Definición del diseño visual:</strong> Al principio hubo incertidumbre sobre cómo estructurar la página principal. Al ser una primera versión exploratoria, nos costó aprovechar bien los espacios de la pantalla y definir una identidad clara.</div>
+                </li>
+                
+                <li class="mb-3 d-flex align-items-start">
+                  <img src="img/Reflexion/localhost.png" alt="Servidor Local" style="width: 24px; height: 24px;" class="mr-2 mt-1">
+                  <div><strong>Despliegue inicial del servidor:</strong> Durante la primera reunión de coordinación, el equipo enfrentó obstáculos técnicos para lograr hostear y levantar la página correctamente en el entorno local.</div>
+                </li>
+                
+                <li class="mb-0 d-flex align-items-start">
+                  <img src="img/Reflexion/curva_de_aprendizaje.png" alt="Curva Aprendizaje" style="width: 24px; height: 24px;" class="mr-2 mt-1">
+                  <div><strong>Nivelación técnica del equipo:</strong> Hubo una curva de aprendizaje inicial, ya que algunos integrantes no estaban familiarizados con la inserción y manejo de rutas de imágenes en HTML, lo que requirió apoyo entre pares.</div>
+                </li>
+                
               </ul>
             </div>
           </div>
@@ -268,9 +285,29 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer text-left bg-light border-top mt-0">
+  <footer class="site-footer text-left">
     <div class="container py-4">
-      <p class="mb-0 text-muted">© 2026 Los Computines - Proyecto de Desarrollo Web.</p>
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <strong>Los Computines</strong>
+          <p class="mt-2 mb-0" style="opacity: .7;">Proyecto de equipo de desarrollo web.</p>
+        </div>
+        <div class="col-6 col-md-4 isa-footer-cols">
+          <div class="isa-footer-heading">Páginas</div>
+          <a href="index.html">Inicio</a>
+          <a href="equipo.html">Equipo</a>
+          <a href="Contenidos.html">Contenidos</a>
+          <a href="reflexion.html">Reflexión</a>
+        </div>
+        <div class="col-6 col-md-4 isa-footer-cols">
+          <div class="isa-footer-heading">Equipo</div>
+          <a href="Benjamin_herrera.html">Benjamin Herrera</a>
+          <a href="David_Bravo.html">David Bravo</a>
+          <a href="Jazmin_Ruz.html">Jazmín Ruz</a>
+          <a href="Jose_Cerda.html">José Cerda</a>
+          <a href="Nicolas_Venegas.html">Nicolás Venegas</a>
+        </div>
+      </div>
     </div>
   </footer>
 
