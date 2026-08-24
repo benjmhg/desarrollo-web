@@ -38,23 +38,21 @@
     </div>
   </section>
 
-  <!-- CONTENIDO -->
+<!-- CONTENIDO -->
   <section class="isa-section isa-section--cream">
     <div class="container">
 
       <!-- 1. DOCKER -->
-      <div class="card border-0 shadow-sm mb-5">
-        <div class="card-body p-4 p-md-5">
-          <h3 class="font-weight-bold mb-3 d-flex align-items-center">
-            <img src="img/docker.png" alt="Logo Docker" style="height: 45px; width: auto;" class="mr-3">
-            Docker
-          </h3>
-          <p><strong>Introducción:</strong> Plataforma que permite empaquetar aplicaciones y sus dependencias en contenedores aislados, asegurando que el proyecto funcione igual en cualquier computadora.</p>
-          <div class="bg-dark text-light p-3 rounded mb-4">
-            <code><span class="text-success">// Ejemplo de configuración (Dockerfile)</span><br>FROM nginx:alpine<br>COPY . /usr/share/nginx/html/</code>
-          </div>
-          <a href="docker-instalacion.html" class="isa-link text-dark font-weight-bold">Ir a la investigación de Docker →</a>
+      <div class="isa-tile isa-tile--oncream mb-5">
+        <h3 class="font-weight-bold mb-3 d-flex align-items-center">
+          <img src="img/docker.png" alt="Logo Docker" style="height: 45px; width: auto;" class="mr-3">
+          Docker
+        </h3>
+        <p><strong>Introducción:</strong> Plataforma que permite empaquetar aplicaciones y sus dependencias en contenedores aislados, asegurando que el proyecto funcione igual en cualquier computadora.</p>
+        <div class="bg-dark text-light p-3 rounded mb-4">
+          <code><span class="text-success">// Ejemplo de configuración (Dockerfile)</span><br>FROM nginx:alpine<br>COPY . /usr/share/nginx/html/</code>
         </div>
+        <a href="docker-instalacion.html" class="isa-link text-dark font-weight-bold">Ir a la investigación de Docker →</a>
       </div>
 
       <!-- 2. COMANDOS DOCKER -->
@@ -68,53 +66,47 @@
           <div class="bg-dark text-light p-3 rounded mb-4">
             <code><span class="text-success">// Ejemplo de ejecución</span><br>docker build -t mi-web .<br>docker run -d -p 8080:80 mi-web</code>
           </div>
-          <a href="docker-instalacion.html#comandos" class="isa-link text-dark font-weight-bold">Ir a Comandos de Despliegue →</a>
+          <a href="docker-comandos.html" class="isa-link text-dark font-weight-bold">Ir a Comandos Docker →</a>
         </div>
       </div>
 
       <!-- 3. CSS -->
-      <div class="card border-0 shadow-sm mb-5">
-        <div class="card-body p-4 p-md-5">
-          <h3 class="font-weight-bold mb-3 d-flex align-items-center">
-            <img src="img/css.png" alt="Logo CSS" style="height: 45px; width: auto;" class="mr-3">
-            CSS (Hojas de Estilo en Cascada)
-          </h3>
-          <p><strong>Introducción:</strong> Lenguaje de diseño utilizado para definir la presentación, colores, tipografías y el aspecto visual general de nuestras páginas web.</p>
-          <div class="bg-dark text-light p-3 rounded mb-4">
-            <code><span class="text-success">/* Ejemplo de regla CSS */</span><br>.bg-dark {<br>&nbsp;&nbsp;background-color: #1a1a1a;<br>&nbsp;&nbsp;color: white;<br>}</code>
-          </div>
-          <a href="css.html" class="isa-link text-dark font-weight-bold">Ir a la investigación de CSS →</a>
+      <div class="isa-tile isa-tile--oncream mb-5">
+        <h3 class="font-weight-bold mb-3 d-flex align-items-center">
+          <img src="img/css.png" alt="Logo CSS" style="height: 45px; width: auto;" class="mr-3">
+          CSS (Hojas de Estilo en Cascada)
+        </h3>
+        <p><strong>Introducción:</strong> Lenguaje de diseño utilizado para definir la presentación, colores, tipografías y el aspecto visual general de nuestras páginas web.</p>
+        <div class="bg-dark text-light p-3 rounded mb-4">
+          <code><span class="text-success">/* Ejemplo de regla CSS */</span><br>.bg-dark {<br>&nbsp;&nbsp;background-color: #1a1a1a;<br>&nbsp;&nbsp;color: white;<br>}</code>
         </div>
+        <a href="css.html" class="isa-link text-dark font-weight-bold">Ir a la investigación de CSS →</a>
       </div>
 
       <!-- 4. BOOTSTRAP -->
-      <div class="card border-0 shadow-sm mb-5">
-        <div class="card-body p-4 p-md-5">
-          <h3 class="font-weight-bold mb-3 d-flex align-items-center">
-            <img src="img/bootstrap.png" alt="Logo Bootstrap" style="height: 45px; width: auto;" class="mr-3">
-            Bootstrap
-          </h3>
-          <p><strong>Introducción:</strong> Framework de CSS que facilita la creación de sitios web responsivos (adaptables a móviles) mediante un sistema de grillas y componentes pre-estilizados.</p>
-          <div class="bg-dark text-light p-3 rounded mb-4">
-            <code><span class="text-success">&lt;!-- Ejemplo de uso de clases Bootstrap --&gt;</span><br>&lt;div class="container d-flex justify-content-center"&gt;<br>&nbsp;&nbsp;&lt;button class="btn btn-primary"&gt;Clic aquí&lt;/button&gt;<br>&lt;/div&gt;</code>
-          </div>
-          <a href="bootstrap.html" class="isa-link text-dark font-weight-bold">Ir a la investigación de Bootstrap →</a>
+      <div class="isa-tile isa-tile--oncream mb-5">
+        <h3 class="font-weight-bold mb-3 d-flex align-items-center">
+          <img src="img/bootstrap.png" alt="Logo Bootstrap" style="height: 45px; width: auto;" class="mr-3">
+          Bootstrap
+        </h3>
+        <p><strong>Introducción:</strong> Framework de CSS que facilita la creación de sitios web responsivos (adaptables a móviles) mediante un sistema de grillas y componentes pre-estilizados.</p>
+        <div class="bg-dark text-light p-3 rounded mb-4">
+          <code><span class="text-success">&lt;!-- Ejemplo de uso de clases Bootstrap --&gt;</span><br>&lt;div class="container d-flex justify-content-center"&gt;<br>&nbsp;&nbsp;&lt;button class="btn btn-primary"&gt;Clic aquí&lt;/button&gt;<br>&lt;/div&gt;</code>
         </div>
+        <a href="bootstrap.html" class="isa-link text-dark font-weight-bold">Ir a la investigación de Bootstrap →</a>
       </div>
 
       <!-- 5. ETIQUETAS SEMÁNTICAS HTML -->
-      <div class="card border-0 shadow-sm mb-5">
-        <div class="card-body p-4 p-md-5">
-          <h3 class="font-weight-bold mb-3 d-flex align-items-center">
-            <img src="img/html_logo.png" alt="Logo HTML Semántico" style="height: 45px; width: auto;" class="mr-3">
-            Etiquetas semánticas de HTML
-          </h3>
-          <p><strong>Introducción:</strong> Etiquetas que aportan significado estructural al contenido (para qué sirve cada parte), mejorando la accesibilidad y el posicionamiento en buscadores (SEO).</p>
-          <div class="bg-dark text-light p-3 rounded mb-4">
-            <code><span class="text-success">&lt;!-- Ejemplo de semántica --&gt;</span><br>&lt;header&gt;Encabezado del sitio&lt;/header&gt;<br>&lt;main&gt;Contenido principal&lt;/main&gt;<br>&lt;footer&gt;Pie de página&lt;/footer&gt;</code>
-          </div>
-          <a href="html-semantico.html" class="isa-link text-dark font-weight-bold">Ir a Etiquetas Semánticas →</a>
+      <div class="isa-tile isa-tile--oncream mb-5">
+        <h3 class="font-weight-bold mb-3 d-flex align-items-center">
+          <img src="img/html_logo.png" alt="Logo HTML Semántico" style="height: 45px; width: auto;" class="mr-3">
+          Etiquetas semánticas de HTML
+        </h3>
+        <p><strong>Introducción:</strong> Etiquetas que aportan significado estructural al contenido (para qué sirve cada parte), mejorando la accesibilidad y el posicionamiento en buscadores (SEO).</p>
+        <div class="bg-dark text-light p-3 rounded mb-4">
+          <code><span class="text-success">&lt;!-- Ejemplo de semántica --&gt;</span><br>&lt;header&gt;Encabezado del sitio&lt;/header&gt;<br>&lt;main&gt;Contenido principal&lt;/main&gt;<br>&lt;footer&gt;Pie de página&lt;/footer&gt;</code>
         </div>
+        <a href="html-semantico.html" class="isa-link text-dark font-weight-bold">Ir a Etiquetas Semánticas →</a>
       </div>
 
       <!-- 6. ETIQUETAS HTML DE USO COMÚN -->
@@ -128,37 +120,17 @@
           <div class="bg-dark text-light p-3 rounded mb-4">
             <code><span class="text-success">&lt;!-- Ejemplos de uso común --&gt;</span><br>&lt;h1&gt;Título principal&lt;/h1&gt;<br>&lt;p&gt;Un párrafo de texto.&lt;/p&gt;<br>&lt;img src="foto.jpg" alt="Descripción"&gt;<br>&lt;a href="enlace.html"&gt;Un link&lt;/a&gt;</code>
           </div>
-          <a href="html-comun.html" class="isa-link text-dark font-weight-bold">Ir a Etiquetas de uso común →</a>
+          <a href="etiquetas-html.html" class="isa-link text-dark font-weight-bold">Ir a Etiquetas de uso común →</a>
         </div>
       </div>
-
+      
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="site-footer text-left">
     <div class="container py-4">
-      <div class="row">
-        <div class="col-md-4 mb-4 mb-md-0">
-          <strong>Los Computines</strong>
-          <p class="mt-2 mb-0" style="opacity: .7;">Proyecto 2026 - Equipo de desarrollo web.</p>
-        </div>
-        <div class="col-6 col-md-4 isa-footer-cols">
-          <div class="isa-footer-heading">Páginas</div>
-          <a href="index.html">Inicio</a>
-          <a href="equipo.html">Equipo</a>
-          <a href="contenidos.html">Contenidos</a>
-          <a href="reflexion.html">Reflexión</a>
-        </div>
-        <div class="col-6 col-md-4 isa-footer-cols">
-          <div class="isa-footer-heading">Equipo</div>
-          <a href="Benjamin_herrera.html">Benjamin Herrera</a>
-          <a href="David_Bravo.html">David Bravo</a>
-          <a href="Jazmin_Ruz.html">Jazmín Ruz</a>
-          <a href="Jose_Cerda.html">José Cerda</a>
-          <a href="Nicolas_Venegas.html">Nicolás Venegas</a>
-        </div>
-      </div>
+      <p class="mb-0 text-muted">© 2026 Los Computines - Proyecto de Desarrollo Web.</p>
     </div>
   </footer>
 
