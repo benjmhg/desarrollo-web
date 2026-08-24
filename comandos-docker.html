@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comandos Docker - Los Computines</title>
+  <link rel="icon" href="img/xd1.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style/style.css" rel="stylesheet">
+  <link href="style/home.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header sticky-top py-4">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="site-brand">
+        <img src="img/xd1.png" alt="Logo Los Computines" class="site-logo mr-2">
+        Los Computines
+      </a>
+      <nav class="site-nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="equipo.html" class="ml-4">Equipo</a>
+        <a href="comandos-docker.html" class="ml-4 active">Comandos Docker</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="isa-section isa-section--dark isa-diagonal">
+    <div class="container">
+      <span class="badge badge-pill isa-eyebrow">Documentación</span>
+      <h1 class="isa-h1 mb-4">Principales Comandos<br>de Docker.</h1>
+      <p class="isa-lead mt-4">
+        Guía de referencia rápida con los comandos más utilizados para la gestión de imágenes y contenedores.
+      </p>
+    </div>
+  </section>
+
+  <!-- TABLA DE COMANDOS -->
+  <section class="isa-section isa-section--cream">
+    <div class="container">
+      <div class="table-responsive bg-white p-4 rounded shadow-sm">
+        <table class="table table-hover border">
+          <thead class="thead-dark">
+            <tr>
+              <th>Comando / Sintaxis</th>
+              <th>Descripción</th>
+              <th>Ejemplo de Uso</th>
+              <th>Resultado Esperado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>docker --version</code></td>
+              <td>Consultar la versión instalada.</td>
+              <td><code>docker --version</code></td>
+              <td>Muestra la versión actual de Docker instalada en el sistema.</td>
+            </tr>
+            <tr>
+              <td><code>docker run hello-world</code></td>
+              <td>Ejecutar una imagen de prueba.</td>
+              <td><code>docker run hello-world</code></td>
+              <td>Descarga la imagen hello-world (si no existe) y muestra un mensaje de éxito.</td>
+            </tr>
+            <tr>
+              <td><code>docker images</code></td>
+              <td>Listar imágenes locales.</td>
+              <td><code>docker images</code></td>
+              <td>Muestra una tabla con todas las imágenes descargadas, su etiqueta y tamaño.</td>
+            </tr>
+            <tr>
+              <td><code>docker ps</code></td>
+              <td>Mostrar contenedores en ejecución.</td>
+              <td><code>docker ps</code></td>
+              <td>Lista los contenedores activos actualmente con sus IDs y puertos mapeados.</td>
+            </tr>
+            <tr>
+              <td><code>docker ps -a</code></td>
+              <td>Mostrar todos los contenedores.</td>
+              <td><code>docker ps -a</code></td>
+              <td>Muestra el historial completo de contenedores, incluyendo los que están detenidos.</td>
+            </tr>
+            <tr>
+              <td><code>docker build -t [nombre] .</code></td>
+              <td>Construir una imagen desde un Dockerfile.</td>
+              <td><code>docker build -t mi-web .</code></td>
+              <td>Lee el Dockerfile del directorio actual y crea una imagen llamada "mi-web".</td>
+            </tr>
+            <tr>
+              <td><code>docker run [opciones] [imagen]</code></td>
+              <td>Crear y ejecutar un contenedor.</td>
+              <td><code>docker run -d -p 80:80 nginx</code></td>
+              <td>Inicia un nuevo contenedor en segundo plano mapeando el puerto 80.</td>
+            </tr>
+            <tr>
+              <td><code>docker stop [contenedor]</code></td>
+              <td>Detener un contenedor.</td>
+              <td><code>docker stop mi-web-container</code></td>
+              <td>Apaga de forma segura el contenedor especificado.</td>
+            </tr>
+            <tr>
+              <td><code>docker start [contenedor]</code></td>
+              <td>Iniciar un contenedor detenido.</td>
+              <td><code>docker start mi-web-container</code></td>
+              <td>Vuelve a encender un contenedor que había sido apagado.</td>
+            </tr>
+            <tr>
+              <td><code>docker rm [contenedor]</code></td>
+              <td>Eliminar un contenedor.</td>
+              <td><code>docker rm mi-web-container</code></td>
+              <td>Borra el contenedor del sistema (debe estar detenido primero).</td>
+            </tr>
+            <tr>
+              <td><code>docker rmi [imagen]</code></td>
+              <td>Eliminar una imagen.</td>
+              <td><code>docker rmi mi-web-html</code></td>
+              <td>Borra la imagen almacenada localmente para liberar espacio.</td>
+            </tr>
+            <tr>
+              <td><code>docker logs [contenedor]</code></td>
+              <td>Consultar registros de un contenedor.</td>
+              <td><code>docker logs mi-web-container</code></td>
+              <td>Muestra la salida de la consola y errores del contenedor para diagnóstico.</td>
+            </tr>
+            <tr>
+              <td><code>docker exec -it [contenedor] bash</code></td>
+              <td>Ejecutar comandos dentro de un contenedor.</td>
+              <td><code>docker exec -it mi-web bash</code></td>
+              <td>Abre una terminal interactiva dentro del contenedor en ejecución.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer text-left">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <strong>Los Computines</strong>
+          <p class="mt-2 mb-0" style="opacity: .7;">Proyecto 2026 - Equipo de desarrollo web.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
