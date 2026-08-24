@@ -80,6 +80,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 .card {
   border-radius: 16px;
+  overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 

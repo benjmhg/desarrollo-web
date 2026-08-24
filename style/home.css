@@ -102,6 +102,11 @@
   text-transform: uppercase;
 }
 
+.isa-cta-box:hover {
+  border-color: var(--isa-accent);
+  color: var(--isa-accent);
+}
+
 .isa-cta-box .isa-cta-sub {
   display: block;
   font-size: 0.72rem;
@@ -203,10 +208,6 @@
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 
-.isa-tech-pill:hover {
-  border-color: var(--isa-accent);
-  color: var(--isa-accent);
-}
 
 /* Diagonal de transición entre hero y la siguiente sección */
 .isa-diagonal {
@@ -231,7 +232,7 @@
 }
 
 .isa-group-photo {
-  border-radius: 0;
+  border-radius: 16px;
   border: 1px solid rgba(17, 17, 17, 0.12) !important;
 }
 
