@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jazmín Ruz - Los Computines</title>
-  <link rel="icon" href="img/xd1.png" type="image/png">
+  <link rel="icon" href="img/logo.png" type="image/png">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="style/perfil.css" rel="stylesheet">
   <link href="style/style.css" rel="stylesheet">
+  <link href="style/home.css" rel="stylesheet">
 </head>
 <body>
 
@@ -16,19 +17,18 @@
   <header class="site-header sticky-top py-4">
     <div class="container d-flex align-items-center justify-content-between">
       <a href="index.html" class="site-brand">
-        <img src="img/xd1.png" alt="Logo Los Computines" class="site-logo mr-2">
+        <img src="img/logo.png" alt="Logo Los Computines" class="site-logo mr-2">
         Los Computines
       </a>
       <nav class="site-nav-links">
         <a href="index.html">Inicio</a>
-        <a href="equipo.html" class="ml-4">Equipo</a>
+        <a href="equipo.html" class="ml-4 active" style="font-weight: bold;">Equipo</a>
         <a href="contenidos.html" class="ml-4">Contenidos</a>
-        <a href="reflexion.html" class="ml-4 active" style="font-weight: bold;">Reflexión</a>
+        <a href="reflexion.html" class="ml-4">Reflexión</a>
       </nav>
     </div>
   </header>
 
-  <!-- Tono apagado dentro de la familia morada que tenías originalmente -->
   <div class="pf-layout" style="--profile-accent: #b48ea1; --profile-accent-text: #6e3f54;">
 
     <!-- ===== FOTO / IDENTIDAD ===== -->
@@ -36,7 +36,6 @@
       <div class="pf-sidebar-inner">
         <div class="pf-avatar-ring">
           <div class="rounded-circle overflow-hidden bg-white text-primary mx-auto" style="width: 250px; height: 250px;">
-            <!-- Aquí ya dejé la ruta de tu foto -->
             <img src="img/jazmin_ruz.jpg" alt="Foto de Jazmín Ruz" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
         </div>
@@ -75,7 +74,7 @@
         <h5 class="text-primary mb-3">Portafolio de Proyectos</h5>
 
         <!-- PROYECTO 1 -->
-        <div class="pf-project">
+        <article class="pf-project">
           <div class="pf-project-head">
             <span class="pf-project-num">01</span>
             <h5 class="text-primary font-weight-bold mb-0">Proyecto Beta (Socio Estratégico)</h5>
@@ -86,10 +85,10 @@
           <div class="pf-tags">
             <span class="badge badge-pill pf-tag">Por determinar</span>
           </div>
-        </div>
+        </article>
 
         <!-- PROYECTO 2 -->
-        <div class="pf-project">
+        <article class="pf-project">
           <div class="pf-project-head">
             <span class="pf-project-num">02</span>
             <h5 class="text-primary font-weight-bold mb-0">Retail SaaS (POS Multi-Negocio)</h5>
@@ -103,19 +102,42 @@
             <span class="badge badge-pill pf-tag">Supabase</span>
             <span class="badge badge-pill pf-tag">Multi-tenant</span>
           </div>
-        </div>
+        </article>
       </div>
 
       <div class="text-center mt-4">
         <a href="equipo.html" class="btn btn-outline-primary pf-btn">&larr; Volver al equipo</a>
       </div>
 
-      <div class="pf-footer">
-        <strong>Los Computines</strong> &mdash; Proyecto de equipo de desarrollo web
-      </div>
-
     </div>
   </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer text-left">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <strong>Los Computines</strong>
+          <p class="mt-2 mb-0" style="opacity: .7;">Proyecto 2026 - Equipo de desarrollo web.</p>
+        </div>
+        <div class="col-6 col-md-4 isa-footer-cols">
+          <div class="isa-footer-heading">Páginas</div>
+          <a href="index.html">Inicio</a>
+          <a href="equipo.html">Equipo</a>
+          <a href="contenidos.html">Contenidos</a>
+          <a href="reflexion.html">Reflexión</a>
+        </div>
+        <div class="col-6 col-md-4 isa-footer-cols">
+          <div class="isa-footer-heading">Equipo</div>
+          <a href="Benjamin_herrera.html">Benjamin Herrera</a>
+          <a href="David_Bravo.html">David Bravo</a>
+          <a href="Jazmin_Ruz.html">Jazmín Ruz</a>
+          <a href="Jose_Cerda.html">José Cerda</a>
+          <a href="Nicolas_Venegas.html">Nicolás Venegas</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
