@@ -1,0 +1,20 @@
+Nombre del equipo: Los Computines
+
+Integrantes:
+
+1. David Ignacio Bravo Llaguel
+   Rol o responsabilidad principal: Desarrollador
+
+2. José Pedro Cerda Guerrero
+   Rol o responsabilidad principal: Desarrollador
+
+3. Benjamín Miguel Herrera Garrido
+   Rol o responsabilidad principal: Encargado de Git / Desarrollador
+
+4. Jazmín Almendra Ruz Sepúlveda
+   Rol o responsabilidad principal: Scrum Master / Desarrolladora
+
+5. Nicolás Ignacio Venegas Gaona
+   Rol o responsabilidad principal: Encargado de QA / Desarrollador
+
+Scrum Master del equipo: Jazmín Almendra Ruz Sepúlveda
